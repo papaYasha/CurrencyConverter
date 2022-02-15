@@ -13,6 +13,8 @@
 		FA6F53DE27BB875400005BA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6F53DC27BB875400005BA1 /* Main.storyboard */; };
 		FA6F53E027BB875900005BA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6F53DF27BB875900005BA1 /* Assets.xcassets */; };
 		FA6F53E327BB875900005BA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6F53E127BB875900005BA1 /* LaunchScreen.storyboard */; };
+		FA6F53F427BB9C4D00005BA1 /* Dongle-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6F53F127BB8F4400005BA1 /* Dongle-Bold.ttf */; };
+		FA6F53F527BB9C5000005BA1 /* Dongle-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA6F53F027BB8F4400005BA1 /* Dongle-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				FA6F53D527BB875400005BA1 /* Currency */,
+				FA6F53DF27BB875900005BA1 /* Assets.xcassets */,
 				FA6F53D427BB875400005BA1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,7 +99,6 @@
 			children = (
 				FA6F53E427BB875900005BA1 /* Info.plist */,
 				FA6F53E127BB875900005BA1 /* LaunchScreen.storyboard */,
-				FA6F53DF27BB875900005BA1 /* Assets.xcassets */,
 				FA6F53EF27BB8F0F00005BA1 /* Fonts */,
 			);
 			path = Other;
@@ -185,7 +187,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA6F53E327BB875900005BA1 /* LaunchScreen.storyboard in Resources */,
+				FA6F53F527BB9C5000005BA1 /* Dongle-Regular.ttf in Resources */,
 				FA6F53E027BB875900005BA1 /* Assets.xcassets in Resources */,
+				FA6F53F427BB9C4D00005BA1 /* Dongle-Bold.ttf in Resources */,
 				FA6F53DE27BB875400005BA1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +352,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Currency/Other/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -366,6 +371,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Currency/Other/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

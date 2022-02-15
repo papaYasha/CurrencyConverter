@@ -14,6 +14,12 @@ class ConverterViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func leftFlagPressed(_ sender: Any) {
+        print("left")
+    }
+    
+    @IBAction func rightFlagPressed(_ sender: Any) {
+        print("right")
+    }
 }
 
