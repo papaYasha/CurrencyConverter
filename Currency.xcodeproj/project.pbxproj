@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		FA6F53D727BB875400005BA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F53D627BB875400005BA1 /* AppDelegate.swift */; };
 		FA6F53D927BB875400005BA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F53D827BB875400005BA1 /* SceneDelegate.swift */; };
-		FA6F53DB27BB875400005BA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F53DA27BB875400005BA1 /* ViewController.swift */; };
+		FA6F53DB27BB875400005BA1 /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F53DA27BB875400005BA1 /* ConverterViewController.swift */; };
 		FA6F53DE27BB875400005BA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6F53DC27BB875400005BA1 /* Main.storyboard */; };
 		FA6F53E027BB875900005BA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6F53DF27BB875900005BA1 /* Assets.xcassets */; };
 		FA6F53E327BB875900005BA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6F53E127BB875900005BA1 /* LaunchScreen.storyboard */; };
@@ -19,11 +19,13 @@
 		FA6F53D327BB875400005BA1 /* Currency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Currency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6F53D627BB875400005BA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA6F53D827BB875400005BA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA6F53DA27BB875400005BA1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA6F53DA27BB875400005BA1 /* ConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
 		FA6F53DD27BB875400005BA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA6F53DF27BB875900005BA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA6F53E227BB875900005BA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA6F53E427BB875900005BA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA6F53F027BB8F4400005BA1 /* Dongle-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dongle-Regular.ttf"; sourceTree = "<group>"; };
+		FA6F53F127BB8F4400005BA1 /* Dongle-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dongle-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,73 @@
 		FA6F53D527BB875400005BA1 /* Currency */ = {
 			isa = PBXGroup;
 			children = (
-				FA6F53D627BB875400005BA1 /* AppDelegate.swift */,
-				FA6F53D827BB875400005BA1 /* SceneDelegate.swift */,
-				FA6F53DA27BB875400005BA1 /* ViewController.swift */,
-				FA6F53DC27BB875400005BA1 /* Main.storyboard */,
-				FA6F53DF27BB875900005BA1 /* Assets.xcassets */,
-				FA6F53E127BB875900005BA1 /* LaunchScreen.storyboard */,
-				FA6F53E427BB875900005BA1 /* Info.plist */,
+				FA6F53EE27BB8F0400005BA1 /* AppSceneDelegate */,
+				FA6F53EA27BB8ED900005BA1 /* Models */,
+				FA6F53EB27BB8EE200005BA1 /* Views */,
+				FA6F53EC27BB8EE700005BA1 /* Controllers */,
+				FA6F53F227BB903700005BA1 /* Services */,
+				FA6F53ED27BB8EF300005BA1 /* Other */,
 			);
 			path = Currency;
+			sourceTree = "<group>";
+		};
+		FA6F53EA27BB8ED900005BA1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA6F53EB27BB8EE200005BA1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA6F53DC27BB875400005BA1 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA6F53EC27BB8EE700005BA1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA6F53DA27BB875400005BA1 /* ConverterViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FA6F53ED27BB8EF300005BA1 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				FA6F53E427BB875900005BA1 /* Info.plist */,
+				FA6F53E127BB875900005BA1 /* LaunchScreen.storyboard */,
+				FA6F53DF27BB875900005BA1 /* Assets.xcassets */,
+				FA6F53EF27BB8F0F00005BA1 /* Fonts */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		FA6F53EE27BB8F0400005BA1 /* AppSceneDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FA6F53D627BB875400005BA1 /* AppDelegate.swift */,
+				FA6F53D827BB875400005BA1 /* SceneDelegate.swift */,
+			);
+			path = AppSceneDelegate;
+			sourceTree = "<group>";
+		};
+		FA6F53EF27BB8F0F00005BA1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FA6F53F127BB8F4400005BA1 /* Dongle-Bold.ttf */,
+				FA6F53F027BB8F4400005BA1 /* Dongle-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FA6F53F227BB903700005BA1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA6F53DB27BB875400005BA1 /* ViewController.swift in Sources */,
+				FA6F53DB27BB875400005BA1 /* ConverterViewController.swift in Sources */,
 				FA6F53D727BB875400005BA1 /* AppDelegate.swift in Sources */,
 				FA6F53D927BB875400005BA1 /* SceneDelegate.swift in Sources */,
 			);
@@ -287,7 +347,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Currency/Info.plist;
+				INFOPLIST_FILE = Currency/Other/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,7 +355,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nyit.Currency;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,7 +365,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Currency/Info.plist;
+				INFOPLIST_FILE = Currency/Other/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,7 +373,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nyit.Currency;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
