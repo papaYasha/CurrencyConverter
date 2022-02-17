@@ -46,7 +46,7 @@ struct CurrencyManager {
             let byn = decodedData.rates["BYN"]
             let rub = decodedData.rates["RUB"]
             let baseCurrency = decodedData.base_code
-            let currency = CurrencyModel(baseCurrency: baseCurrency, usd: usd!, eur: eur!, rub: rub!, byn: byn!)
+            let currency = CurrencyModel(baseCurrency: baseCurrency, usd: usd ?? 1, eur: eur ?? 0.8, rub: rub ?? 0.75, byn: byn ?? 2.55)
             print(currency)
             return currency
         } catch {

@@ -11,7 +11,10 @@ class CurrencyListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var currencyCode = ["USD", "EUR", "RUB", "BYN"]
-    var flags = ["usa", "euro", "russia", "belarus" ]
+    var flags = ["usa", "euro", "russia", "belarus"]
+    var values: [Double] = []
+    var converter = ConverterViewController()
+    var cell = TableViewCell()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +49,6 @@ extension CurrencyListViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        <#code#>
+        
     }
 }

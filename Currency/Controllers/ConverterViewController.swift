@@ -38,6 +38,8 @@ class ConverterViewController: UIViewController {
     
     private func createDelegate() {
         manager.delegate = self
+        leftTextField.delegate = self
+        rightTextField.delegate = self
     }
 
     @IBAction func leftFlagPressed(_ sender: UIButton) {
@@ -69,5 +71,9 @@ extension ConverterViewController: CurrencyManagerDelegate {
         }))
         self.present(alert, animated: true)
     }
+}
+
+extension ConverterViewController: UITextFieldDelegate {
+    
 }
 
