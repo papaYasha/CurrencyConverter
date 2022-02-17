@@ -7,6 +7,6 @@
 
 struct CurrencyData: Codable {
     let base_code: String
-    let rates: [String: Double]
+    var rates: [String: Double]
 }
 

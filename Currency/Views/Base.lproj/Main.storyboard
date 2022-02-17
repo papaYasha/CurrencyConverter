@@ -35,7 +35,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qIz-GH-yBj">
                                                         <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="usa" translatesAutoresizingMaskIntoConstraints="NO" id="GUJ-eX-Hoy">
+                                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="USD" translatesAutoresizingMaskIntoConstraints="NO" id="GUJ-eX-Hoy">
                                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gek-vz-XHu">
@@ -100,7 +100,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aqX-bu-czg">
                                                         <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="euro" translatesAutoresizingMaskIntoConstraints="NO" id="aum-DV-aW2">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EUR" translatesAutoresizingMaskIntoConstraints="NO" id="aum-DV-aW2">
                                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XbG-ks-1pk">
@@ -246,8 +246,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="euro" width="512" height="512"/>
-        <image name="usa" width="3000" height="3000"/>
+        <image name="EUR" width="512" height="512"/>
+        <image name="USD" width="3000" height="3000"/>
         <namedColor name="background">
             <color red="0.84200000762939453" green="0.84200000762939453" blue="0.84200000762939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

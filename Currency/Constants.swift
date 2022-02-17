@@ -12,4 +12,6 @@ struct Constants {
     static let tableViewCellID = "TableViewCell"
     static let ConverterVCStoryboardID = "Converter"
     static let ListStoryboardID = "List"
+    static let keyForDataSave = "Data"
+    static let nameForTitle = "Currency list"
 }
