@@ -5,6 +5,8 @@ Stack:
 - iOS 14.5
 - UIkit
 - iOS deployment target: 13.0
+- Dark/light mode
+- Landscape mode
 
 The app need improvements. 
 At the moment, u can convert USD(only) to another currencies. 
