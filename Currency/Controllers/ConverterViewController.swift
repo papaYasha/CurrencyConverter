@@ -13,9 +13,10 @@ protocol ButtonHandler: AnyObject {
 
 class ConverterViewController: UIViewController {
 
+    //MARK: - IBOutlets
+    
     @IBOutlet weak var leftButton: UIButton!
     @IBOutlet weak var rightButton: UIButton!
-    
     @IBOutlet weak var leftFlagImage: UIImageView!
     @IBOutlet weak var rightFlagImage: UIImageView!
     @IBOutlet weak var leftFlagButton: UIButton!
@@ -24,15 +25,22 @@ class ConverterViewController: UIViewController {
     @IBOutlet weak var rightCurrencyLabel: UILabel!
     @IBOutlet weak var leftTextField: UITextField!
     @IBOutlet weak var rightTextField: UITextField!
+    
+    //MARK: - Properties
+    
     public var currentTextLeftButton: String = ""
     public var currentTextRightButton: String = ""
     var manager = CurrencyManager()
     var data: CurrencyData?
     
+    //MARK: - ViewDidLoad
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         config()
     }
+    
+    //MARK: - Private functionns
     
     private func config() {
         createDelegate()
@@ -83,7 +91,9 @@ class ConverterViewController: UIViewController {
         }
         return ""
     }
-
+    
+    //MARK: - IBActions
+    
     @IBAction func leftFlagPressed(_ sender: UIButton) {
 //        let storyboard = UIStoryboard(name: "Main", bundle: nil)
 //        guard let controller = storyboard.instantiateViewController(withIdentifier: Constants.ListStoryboardID) as? CurrencyListViewController else { return }
@@ -101,9 +111,11 @@ class ConverterViewController: UIViewController {
     }
     
     @IBAction func hideKeyboardTapGesture(_ sender: UITapGestureRecognizer) {
-        
+        view.endEditing(true)
     }
 }
+
+//MARK: - Extensions
 
 extension ConverterViewController: CurrencyManagerDelegate {
     func didFailWithError(error: String) {

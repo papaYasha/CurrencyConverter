@@ -8,7 +8,6 @@
 import UIKit
 
 protocol CurrencyManagerDelegate {
-//    func didUpdateCurrency(currencyManager: CurrencyManager, currency: CurrencyModel)
     func didFailWithError(error: String)
 }
 

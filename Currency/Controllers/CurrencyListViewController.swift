@@ -13,16 +13,26 @@ enum ButtonType {
 }
 
 final class CurrencyListViewController: UIViewController {
+    
+    //MARK: - IBOutlets
+    
     @IBOutlet weak var tableView: UITableView!
+    
+    //MARK: - Properties
+    
     private var currencyData: [String] = []
     private let defaults = UserDefaults.standard
     public var buttonType: ButtonType = .left
     weak var delegate: ButtonHandler?
     
+    //MARK: - ViewDidLoad
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         config()
     }
+    
+    //MARK: - Private functions
     
     private func config() {
         title = Constants.nameForTitle
@@ -48,6 +58,8 @@ final class CurrencyListViewController: UIViewController {
         tableView.register(nib, forCellReuseIdentifier: Constants.tableViewCellID)
     }
 }
+
+//MARK: - Extensions
 
 extension CurrencyListViewController: UITableViewDelegate, UITableViewDataSource {
     
